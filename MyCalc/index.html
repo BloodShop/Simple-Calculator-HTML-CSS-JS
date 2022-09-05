@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link href="/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="calculator-grid">
+        <div class="output">
+          <div id="num1" data-previous-operand class="previous-operand"></div>
+          <div id="operation1" class="previous-operand"></div>
+          <div id="num2" data-current-operand class="current-operand"></div>
+        </div>
+        <button value="/" onclick="addOperation(value)" data-operation>/</button>
+        <button value="DEL" onclick="deleteDigit()" data-delete class="del">DEL</button>
+        <button value="AC" onclick="clearBoard(value)" data-all-clear class="span-two">AC</button>
+        <button value="*" onclick="addOperation(value)" data-operation>*</button>
+      <button value="1" onclick="addNumber(value)" data-number>1</button>
+      <button value="2" onclick="addNumber(value)" data-number>2</button>
+      <button value="3" onclick="addNumber(value)" data-number>3</button>
+      <button value="+" onclick="addOperation(value)" data-operation>+</button>                 
+      <button value="4" onclick="addNumber(value)" data-number>4</button>
+      <button value="5" onclick="addNumber(value)" data-number>5</button>
+      <button value="6" onclick="addNumber(value)" data-number>6</button>
+      <button value="-" onclick="addOperation(value)" data-operation>-</button>
+      <button value="7" onclick="addNumber(value)" data-number>7</button>
+      <button value="8" onclick="addNumber(value)" data-number>8</button>
+      <button value="9" onclick="addNumber(value)" data-number>9</button>
+      <button value="=" onclick="equallity()" data-equals class="span-two">=</button> 
+      <button value="." onclick="addNumber(value)" data-number>.</button>
+      <button value="0" onclick="addNumber(value)" data-number>0</button>
+    </div>
+    <div class="diver">
+      <h1 id="num1"></h1>
+      <h1 id="operation1"></h1>
+      <h1 id="num2"></h1>
+    </div>
+  </body>
+  <script src="/Calculation.js"></script>
+  <!-- <script src="/Calculator/scripts.js"></script> -->
+</html>
